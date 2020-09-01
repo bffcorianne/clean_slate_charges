@@ -1,0 +1,42 @@
+---
+title: "Clean Slate Prosecution Data EDA"
+output: html_notebook
+---
+
+
+
+
+```{r}
+cols <- c("charge", "nw_counts", "sf_counts", "description", "chapter", "section", "expungeable", "sex", "murder")
+
+```
+
+
+```{r}
+glimpse(suf)
+
+
+```
+
+```{r}
+suf %>% count(status)
+
+# axis text theme
+
+theme <- 
+plot_bar(suf,
+         title = "Categorical Frequecies",
+         nrow = 1,
+         ncol = 1)
+
+```
+
+
+
+
+```{r}
+
+```
+
+
+
